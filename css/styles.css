@@ -1,0 +1,209 @@
+body {
+    font-family: 'Inter', sans-serif; /* Set font family for the entire website */
+    max-width: none; /* Removed max-width */
+    margin: 0 auto;
+    /* padding-top: 20px; Removed padding-top */
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 8px;
+    z-index: 1000;
+    max-width: none; /* Removed max-width */
+    margin: 0 auto; /* Center the sticky header */
+}
+
+.sticky-header-container {
+    max-width: 1280px !important; /* Set max-width to 1280px with !important */
+    margin: 0 auto; /* Center the container */
+    width: 100%; /* Ensure it takes full width */
+    padding-left: 16px; /* Add padding-left to the container */
+    padding-bottom: 8px; /* Add padding-bottom to the container */
+}
+
+.sticky-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f21269;
+    font-family: 'Inter Tight', sans-serif;
+    margin: 0;
+}
+
+.sticky-header p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #57636C;
+    font-family: 'Inter Tight', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 16px; Removed padding */
+    max-width: 1280px !important; /* Set max-width to 1280px with !important */
+    margin: 0 auto !important; /* Center the container with !important */
+    justify-content: space-between; /* Set alignment between left-col and right-col to space-between */
+}
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        /* padding: 0 64px; Removed padding */
+    }
+}
+.left-col {
+    flex: 1;
+    padding: 128px 16px;
+    max-width: 520px !important; /* Set max-width to 520px with !important */
+}
+.left-col p {
+    line-height: 1.6 !important; /* Set line height for paragraphs in left-col */
+    font-size: 16px !important; /* Set font size to 16px */
+    font-weight: 400 !important; /* Set font weight to 400 */
+    font-family: 'Inter', sans-serif; /* Set font family for paragraphs in left-col */
+    color: #14181b; /* Set text color for paragraphs in left-col */
+}
+.left-col h1 {
+    font-size: 28px !important; /* Set font size to 28px */
+    font-weight: 600 !important; /* Set font weight to 600 */
+    line-height: 1.6 !important; /* Set line height to 1.6 */
+    max-lines: 1; /* Set max lines to 1 */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    margin-bottom: 64px; /* Add space between h1 and p */
+    color: #14181b; /* Set text color for h1 in left-col */
+}
+@media (min-width: 768px) {
+    .left-col {
+        padding: 128px 32px; /* Set padding to 32px for medium screens */
+    }
+}
+@media (min-width: 992px) {
+    .left-col {
+        padding: 128px 64px; /* Set padding to 64px for large screens */
+    }
+}
+.right-col {
+    display: none;
+}
+@media (min-width: 768px) {
+    .right-col {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 360px;
+        flex: 1;
+        padding-right: 32px;
+    }
+    .right-col img {
+        max-width: 100%;
+    }
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #e0e3e7; /* Set color of the divider */
+    position: sticky; /* Make the divider sticky */
+    top: 60px; /* Position it right below the sticky header */
+    z-index: 999; /* Ensure it stays below the sticky header */
+}
+
+.read-more-content {
+    display: none; /* Hide the additional paragraphs initially */
+}
+
+.read-more-btn {
+    color: #f21269; /* Change color to match "intersun" */
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 8px;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'Inter', sans-serif; /* Set font family for paragraphs in left-col */
+}
+
+.product-button {
+    display: inline-flex; /* Use inline-flex to center text vertically */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 0 16px; /* Update padding left & right */
+    height: 40px; /* Set height */
+    border: 2px solid #4b39ef;
+    color: #4b39ef;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 8px; /* Update border radius */
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.product-button:hover {
+    background-color: #4b39ef;
+    color: white;
+}
+
+.signature-container {
+    border-bottom: 1px solid #e0e3e7; /* Add bottom line similar to divider */
+    margin-bottom: 16px; /* Add margin bottom */
+    max-width: 240px;
+}
+
+.signature {
+    padding: 32px 16px 0px;
+    max-width: 240px;
+}
+
+.footer {
+    background-color: #f1f4f8;
+    padding: 40px 16px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 16px;
+}
+
+.footer-column h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #14181b;
+    margin-bottom: 16px;
+}
+
+.footer-column p, .footer-column ul {
+    font-size: 14px;
+    color: #57636C;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+    }
+}
